@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Cytek Aurora – UMGCCC FCSR</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-8eaec6b9941db0f18eecf13b95a46332.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-LZ35J3XE4D"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-LZ35J3XE4D', { 'anonymize_ip': true});
+</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../images/hex.svg" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">UMGCCC FCSR</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../index.html"> 
+<span class="menu-text">Landing</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.youtube.com/@CytometryInR"> <i class="bi bi-youtube" role="img" aria-label="YouTube">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/UMGCCCFCSR"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Cytek Aurora</li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+  <div id="quarto-announcement" data-announcement-id="b60c63f405301e0fe669fe5b9f222add" class="alert alert-info hidden"><i class="bi bi-info-circle quarto-announcement-icon"></i><div class="quarto-announcement-content">
+<p>Thanks for your editing contributions!</p>
+</div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+ <span class="menu-text">Tutorial</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Getting Started</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Cytek Aurora</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Este es la documentacion para en eltrenamiento para utilizar uno de nuestros Cytek Aurora. Si preferies ver este entrenamiento de forma de un video, por favor procide a <a href="https://www.youtube.com/@CytometryInR">YouTube</a>.</p>
+<section id="empezando" class="level1">
+<h1>Empezando</h1>
+<p>Si eres el primer usuario del dia, vas a tener que prender el instrumento y hacer los chequeos de control de calidad.</p>
+<section id="rellenando-contenedores" class="level2">
+<h2 class="anchored" data-anchor-id="rellenando-contenedores">Rellenando contenedores</h2>
+<section id="rellenando-sheathe-fluid" class="level3">
+<h3 class="anchored" data-anchor-id="rellenando-sheathe-fluid">Rellenando Sheathe Fluid</h3>
+<p>Antes de comenzar, recomiendo que cheques los niveles de liquido en los contenedores de “sheathe fluid” y “waste”. El “sheathe fluid” en nuestro “flow core” consiste de agua ultra-pura que fue filtrado por nuestro sistema de MilliQ, que esta ubicada adentra del cuarto de sorteo. Si estas aqui antes o despues de las horas de negocio, puedes encontrar las llaves adentro del primer cajon del escritorio de Mikayla.</p>
+<p>Recomemdamos que todo usuario use guantes mientras interactuando con los instrumentos. Aunque toda celula debe estar “fixed”, el uso de contrad y cloro es suficiente que hemos encontrado mejor poner guantes en ves de por accidente quedar en contacto. Ademas, ayuda reducir chance de contaminacion al cuarto de sorteo.</p>
+</section>
+<section id="section" class="level3">
+<h3 class="anchored" data-anchor-id="section"></h3>
+<p>Para el waste, si esta mas de mitad lleno, es recomendado que lo vacies. “EHS” requiere que para disenfectar, an~adimos suficiente cloro para que al nivel final de lleno la contentracion de cloro sea a 10% de todo el volumen del contenedor.</p>
+<p>Algo para considerar, es que la botella esta conectada con el “cytometer” por medio de ambo el tubo por cual viaja el “waste”, pero tambien un cable por cual el instrumento puedo verificar el nivel. Porque este cable puedo ser dan~ado si lo “envolvemos”, para remover, recomendamos que agarramos la botella por medio de la capa, y giramos la botella hacia la “derecha?” hasta que se desconecta. Con esto hecho, agarrando con dos</p>
+<p>Para el waste, para sanitizar todo, necesitamos anadir cloro para que el volumen final la concentracion quede al 10%. Cuando el tanque/contenedor de waste este lleno, lo que hacemos es agarrramos la capa de la botella, y giramos la botella. Luego al desconectar, ponemos la capa y los tubos de intake en el contenedor temporario.</p>
+<p>De ahi, vamos y descartamos con cuidado en el sink. Despues, hacemos un rinse con agua para que no quede nada y para que todos con cual compartimos esto cuarto no estemos oliendo cloro por el resto del dia. Luego, regresamos a lado del LSR-II done guardamos el cloro, y lo rellenamos hasta la line roja, que es lo que necesitamos anadir para el volumen final del 10%. Estos contenedores son un poco mas de 4L, o algo asi. Para el sheathe fluid, no removemos la capa como es el caso con el cloro. La razon es que el waste tiene un sensor electronico, que puede causarnos problemas si lo movemos demasiado, asi que mejor no molestarlo mas de lo que sea necesario.</p>
+<p>Para el sheathe, presionamos el boton, que release libera la conexion con los ubos de plastico. De ahi llevamos este al estacion de agua MiliQ, y lo rellenamos ahi.</p>
+<p>Si estas aqui durante la semana, normalmente vas a encontrar los instrumentos ya predidos y listos para usar. Eso es porque yo ya estube aqui mas temprano, los prendi, limpie y asegure que pasaron sus chequeos de qualidad, osea, QC. Si llegas depus de horas, o durante el fin de semana, lo que haces es el boton para prender in instrumento esta del lado izquierdo, casi hasta arriva, presiona fuerte para dos segundos para prender el instrumento.</p>
+<p>Desde ahi, asegura que la computadora este prendida, usa la contrasena comun para el instrumento cuando Windows pregunte para la contrasena. Cuando todo termine de inicear, lo que vas a brier es el software SpectroFlo, el shortcut atajo que puedes encontrar aqui.</p>
+<p>Al iniziar, el software verifica que tienes contrato con Cytek por medio de un SpectroFlo dongle. Por lo menos es el caso con la version 3.2, solo necesitas el dongle puesto en el slot de USB al momento de inicear el software. Si tienes el software instalado en tu laptop/portatil, y quieres analizar n otro lugar por un rato, puedes remover el USB de una maquina que nadie esta utilizando, enchufarlo en tu laptop, entrar tu contrasena, remover el USB y regresarlo al instrumento. Siempre y cuando no te olvides y accidentalmente cierres el programa, vas a poder hacer tu analisis.</p>
+<p>En fin, estos SpectroFlo dongles vienen con nuestros instrumentos y queden asi. Asi que siempre estan enchufados con las computadoras de sus respectivas maquinas. Asi que al comenzar el instrumento, podemos procedir directamento entrando la contrasena.</p>
+<p>El user se crea por un login del account Admin. La contrasena de Admin es …, si lo se, una contrasena fortisima no creen. De ahi, a ____ y creamos un nuevo usuario. Nombre, contrasena y aqui prolomenos por si acaso se te olvide la contrasena, underscore y el apellido del primer investigador del laboratorio en cual trabajas.</p>
+<p>Al regresar a la pagin de login, podemos ver las varias opciones. Para este entrenamiento, voy a concentrar en explicando solo como usar el mode spectral, el modo convencional puede esperar para otro dia.</p>
+<p>Desde aqui, despues del login, vemos varias opciones. La mayoria del tiempo para un user, simplemente vamos a estar usando el tab acquision. Vamos a enfocarnos aqui para el momento.</p>
+<p>Cuando ya estamos ahi, lo que necesitamos hacer es seleccionar crear un nuevo experimento (en vez de importar un experimento que ya fue previamente creado). Desde aqui, vemos el primer tab, que es donde podemos nombrar nuestro experiment, y seleccionar los fluorophores. Para anadir fluorophores, podemos empezar entrando sus nombres y si ya estan parte del sistema van a aparecer solo los fluorophores que tienen en comun lo que ya teclaste. AL encontrar cual estabas buscando, puedes anadir o hacer un doble clikc para anadirlo. Borra lo que teclaste, y repite el proceso para el resto de tus fluorophore.</p>
+<p>Algo que recomiendo yo es que anadelos en order basado en su detector, osea en que lugar el lightspectrum su emisiom maxima ocurre. La razon es que el software va organiza sus controls de referencia basado en este orden que anades los fluorophores en esta pagina, y puede causar dolores de cabeza cuando los organizes de otra manera. Obviamento, preferencia personal, pero cuando estas cansado, descafinado y despelucado aqui despues de horas, vale la pena menos esfuerzo mental de encontrar cual tubo va donde.</p>
+<p>En la segunda pagina, tab encontramos donde podemos anadir groupos a nuestro experimento, adentro del cual podemos agregar tubos ubes para specimens individuales. Como organizas tus experimentos va depender de con que estas trabajando, en mi caso, con especimens clinicos, es el numero de identificacion del paciente como grupo, y la condiction en particular del tratamiento como el tubo.</p>
+<p>Lo importante es que todos los tubes que anades son specimens, que estan stained con la mescla que contiene todo los fluorophores de tu panel. Para que un experimento de citrometria de flujo spectral funcione, necesitamos tambien proveer otras dos cosas. Tubos conteniendo celulas que no hemos stained con un fluorophore, osea, los unstained. Y que sirven como referencia de autofluorescence. y los controles de referencia individuales para cada uno de tus fluoropjores que tienes en tu panel, o sea, los single-color controls. Como exactamente estos son utilizados, hablaremos mas sobre ellos alrato.</p>
+<p>Para el momento, los anadimos encontrando el boton de referencia del group arriva en medio de la pantalla, que tiene un pequeno lapiz como su imagen. Desde aqui, las referencias ya anadidas aparecen para los fluorophores que seleccionaste en la pagina previa. Lo importante de esta pagina es uno, anadir los nombres de los markers asignados, para sus respectivos fluorophores. Despues que entrastes todos, selecciona si tu control de referencia es celulas o beads. Eso informa el sistema cual usar para la subtraccion de autofluorescence. Luego, seleccionas tu preferencia de cual AF quieres usar para la subtraccion. Si lo dejas sin seleccion, anadira ung ate negativo interno en addicional del gate positivo para cada specimen. Esto puede funcionar, pero tambien puedo causar problemas si tienes fluorophores que causan non-specific stains.</p>
+<p>Lo opcion normal es que uses un unstained universal, esto te permite dar una referencia de control separado. Esto ayuda esquivar el escenario en cual que el fluorophore anade senal al negativo, que cause que incrementan.</p>
+<p>Para anadir otro unstained, seleccionamos esta opcion aqui arriva. Mi practica nornal es nombrar los unstained adicionales basado en que populacion de celulas van a representar si lymphoctyes, <strong><em>, </em></strong>. o celulas muriendo o ya muertas.</p>
+<p>Si quieres anadis mas referecias de lo que ya tienes, vas a tener que ir hasta abajo de la pagina a la izquierda, y seleccionar tus opciones. Esto anade un tube de referencia adicional, que puedes cambiar el nomre del fluorophore. Etc como habiamos dicho antes. De aqui procedemos a la pagina que sigue. Esta pagina es donde decimos a SpectroFlo cuantas celulas queremos acquirir. Esto podemos especigicar basado en tubos individuales, al nivel del grupo, o del experimento entero.</p>
+<p>La primer columna refiere a cual guate estamos usando par ael crierio de numeros de celulas acquirrido. Yo normalmente quiero acquirir todas las celular, pero si quieres acquirir algo mas especifico, digamos, 5000 celulas cd4, si ya creaste esas puertas, en el tempate, en el drop-down puedes seleccionarlo.</p>
+<p>Continuando, puedes decidir si en la version final del fcs file solo quieres tener celular que cayeron adentro de un gate. Esto puede ayudar reducir el tamano de los files. pero al mismo timepo, estas a la merced de que para cada uno de tus especimens aquiridos todas las puertas gates van a estar en la misma posicion, si esto cambia, estas jodido.</p>
+<p>Con estas 2 columnas ya decidias, podemos especificar cuantos eventos queremeor acquirir, Recurerda que este numero cuenta celular, doublets, y quiza debris, dependiendo que hemos basado como nuestro gate. La siguente columna especifica el volumen para tomar. Recuerda que el volumen que anades va ver un poco que se pierde al comienzo antes de que visualizes las celulas, lo que intentamos hacer es que no quedemos sin volumne y que el instrumento este simplemente tragando aire por sus tubos en vez de liquido.</p>
+<p>Y misma situacion, podemos especificar un parro basado en timepo. Ajora, no usamos esta categoria de parra por biologia, normalmente usamos eventos o volumne. Pero si eres como yo, y no estas monitoreando a cada seguno porque te distraes, lo que queremos prevenir es un caso cuando hay un clog, y no esta icnrementando los eventos or el volumen, y continua por horas en el mismo tubo. O vice versa, cuanda ya no hay volumne, y el numero de eventos no esta cambiando, y solo esta tragando aire el instrumento. Por eso, lo que hago yo es calcular si en acquision a velocidad rapido son 70 microlitros por minuto, y tengo alrededor de 200 microlitros total por tubo, si pongo el parro de tiempo a quatro minotos ( o sea 240 segundos) solo estaria jalando aire por un minuto en el peor caso.</p>
+<p>Y el critero de cambio evento y volumen esta, aunque no lo uso. Lo unico mas es la columna de template, en el momento esta seleccionado raw or crudo, pero despues del unmixing lo vamos a cambiar. Demonstrare porque en un ratito.</p>
+<p>Bueno pues, esta pagina puedes anadir palabras claves, osea keywords, que puedes utilizar adentro de los files fcs para determinar a que grupo pertenicia cual file, pero eso es algo mas unico a tu proyecto, y no mensionare mas de como hacerlo en el momento.</p>
+<p>Y de aqui, seleccionamos para continuar. Ok, ahora estamos en la pagina del experimento, vemos todos los tubos y grupos que anadimos ya en el lado izquierdo. Tambien tenemos el panal de control del instrumento, con botones para empezar, record, pausar y parrar, e el sitflush limpeo del intake debajo aparece numero de eventos acquiridos arriba de los ya acquiridos. Vemos microlitros por minutos de volumen, velocidad baja, media o alta. Eventos abortados cuanto eventos que el einstrumento empezo a contar pero no pudo con suceso. Eso normalmente son pocos, pero si estas acquiriendo muy rapido, o con na alta concentracion, aumentan como un porcentaje.</p>
+<p>A que velocidad deberias acquirir? A que concentracion deberias quedar? Eso depende de tu proposito. Si queres la mejor cualidad acquiere todo a la velocidad lenta, con una concentracion baja, no vas a tener ningun problema con eventos abortados. Al mismo tiempo, vas a estar qui todo el dia. Vice versa si tu populacion de celulas son un porcentaje muy pequieno de la poblacion, y quieres suficiente eventos para investigarlos, vas a tene que acquirir millones de eventos, asi que vas a tener una concentracion muy elevada o velocidad rapido para que esto suceda. Lo mas importante, haz lo que sea necesaria para no causar un clog, porque en ese caso, pierdos tus specimens, y estaras ahi mas tiempo arreglando el problema de lo que hubieras estado si solo estubieras acquiriendo a una velocidad mas lente desde el comienzo.</p>
+<p>Hay tambien opcion de cuantos eventos necesitamos mostrar en la pantalla en cualquier momento, cambia este si tu computadora empieza a trabarse o tiene menos especificaciones de memoria, etc.</p>
+<p>Y el ultimo panal debajo es el settings intrumentales, ete va ser el cual vamos a utilizar mas en el momento porque necesitamos asegurar que podemos visualizar nuestras celular y resolver diferencias de tamano. Debajo, si tu instrumento tiene un plate loader, esa los controles para usarlo, pero mas sobre esto alrato.</p>
+<p>Continuando, el area de la derecha es donde visualizamos templates. Estos existen en dos formas, raw o unmixed. Osea, muestran la informacion raw/cruda mostrando detectores individuales o unmixed, de mesclada en cual caso muestro los fluorophores. Tambien tenemos un plot para ver los spectrums de lo que andamos acquiriendo. En el defalt vemos FSC SSC.</p>
+<p>El concepto de FSC/SSC es y de SSC-B es …</p>
+<p>En fin, quedamos con el default para ahorita, y lo cambiaremos guardaremos con otro nombre al rato.</p>
+<p>Ultima cosa antes que empezemos, un cytek Aurora tiene ventaja qde que sus chequeos de cualidad son para mantener un MFI estable, permitiendo comparar specimens acquiridos hoy contra otros collecionados la semana pasada, mes pasado, o en teoria hace an~os. en Teoria. Esto es por la utilizacion de beads, que venden en lots. En el momento estamos usando el lot 2006.</p>
+<p>Es recomendado acquirir hacer el chequo de cualidad automazida diariamente. Para hacer eso, navegamos al lado izquierdo arriva y seleccionamos el QC, con su imagen de citometro.</p>
+<p>De ahi a DailyQC, osea chequeo cualidad diaria. Aqui podemos ver si el instrumento a pasado QC o no. Cytek en el momento tiene los siguentes criterios para decidir si algo esta fallando o no. El gain, que puedes pensar como voltaje en otros instrumentos, es adjustado dia a dia para mantener el nivel de intensidad designada para cada detector. Continuando, habia un nivel original, si este es mas que doble lo que era originalmente, en este casa va a fallar el gain. Si cualquier detector falla en su gain, el reporte automaticamente va aparecer como fallado.</p>
+<p>La otra metrica es %rCV, que captura como dispersionado esa la poblacion. Cuando los laseres y detectors estan afinados y en buenas condiciones, no va ver mucha dispersion y todo estos porcentajes estaran menos de 6. Si son mas que 6 o 8, es cuando notaremos quiza hay un problema resolviendo entre nuestras populaciones de celular que son dim en sus marcadores.</p>
+<p>Lo que necesitamos recordar, es que cytek no tiene criterios de falla para todos los detectores, solo para el tercero de cada laser. En ese caso, si el porcentaje es mayor que 3 en el tercer detector, fallara el detector y el reporte. Pero si occure el el 16avo, nada. Esto no significa que no hay problemas, simplemente que no sera reportado, Asi que lo que yo hango es mirar todo rapidaente aqui por si acaso.</p>
+<p>La razon para rastrear lo que ocurre aqui es los instrumentos cambian dia a dia y con el paso tiempo el poder del laser va bajando. Aqui en la universidad de maryland, andamos monitoreando nuestros instrumentos, podemos visualizar los cambios. Que haces si galla/fallo un reporte? Mayor pare del tiempo, es que el instrumento no a tenido suficiente tiempo para calentar o necesita un poco mas de limpieza. Asi que normalmente relimpoiamos con un detergente contras y despues con agua. Igualmente el instrumento necesita calentar antes de empezar, asi que damos 15-30 minutos para que sea suficiente. Los beads tambien son suceptibles cuando estan expuestos a cloro, que causa que pierdan partes de su fluorescence.</p>
+<p>Enb fin, ya que tenemos estos detallitos de contexto, empezemos. Primero, ponenomos el tubo de unstained a velocidad low/lento. que echemos vortex, luego el click. Luego, con el raton asegura que estemos en el lugar correcto, indicados por la flecha verde.Y empezamos seleccionando, y hacemos click al empoezar. En estos momentos, el sample esta succionando desde el tubo hasta que las celulas pasen por el flow cell, pasando ahi por los laseres. Estos eventos vemops en la pantalla, y hacemos el proceso de finar la posicion de nuestras celulas. Lo que queremos hacer es asegurar que todo mas o menos quede central, que podemos resolver entre las diferentes populaciones, etc.</p>
+<p>Aumentamos, le quitamos, etc. Y dejamos un poco de espacio blanco alrededor por si acaso hay eventos que no conforman a lo normal. En case de un especimen que no se ve como los demas. Y guardamos las configuraciones con nuestros iniciales de nombre, undescroe, y el nombre del tipo de celulas.</p>
+<p>De ahi, el threshold sirve para poner el limite de detecion menor, o record, porque el sistema puede tener ruido electronico que tambien son tratado como eventos. En est caso, lo ponemos a 200k o la primera yar que permite todavia ver las celulas que andan muriendo. Y aqui guardamos, lo unico mas de adjustar el fsc scaling es para otro dia. Asegura que el FSC SSC podemor acquirir -H, -W, y -A para resolver celular dobles, pero no en el caso de los detectores individuales.</p>
+<p>Como resolvemos celulas dobles, bueno….</p>
+<p>Y guardamos y acquiremos unos eventos para poder anadir grupos puertas. Pueden ver los voltajes de los laseres para cada detector. En comparacion con otros instrumentos convencionales, no es recomendado adjustarlos individualmente. Esto es porque distorcionan como se percibe las senal, afectando como quedan las signaturas fluorescentes finales. Esto puede causar que no son comparables con senales acquiridos en otros dias. Adicionalmente, al cambiar uno, ya no tienes el beneficio del cheqo de cualidad del instrumento, y quedaras en una rama alternativa de donde todo queda como estuvo en el dia que originalmente acquiriste. que no refleciona el estado actual de la maquinia o del instrumento.</p>
+<p>Ahora que estamos listos, collecionamos el primer control de referencia. Cuantos eventos necesitas depende si estas acquiriendo con celulas o beads. Como decidir entre celulas o beads? Bueno….</p>
+<p>Algo alrededor de 5000 beads es suficiente, en celulas depende de tu marker, yo normalmento quiero acquirir entre 50k o 200k eventos. y notamos cuanto volumen habia en total con esto hecho, regresamos al boton de lapiz, para edit, y de qui vamos a acquision y de ahi cambiamos a eventos deseados par avarios markers del panel, y el volumen a que tenemos en el momento.</p>
+<p>Y continuamos, vez en este caso no avanzo automaticamente, si quieres que haga esto, lo que hacemos es…, navegamos a …., seleccionamos y se ve asi en la proxima.</p>
+<p>Y ahora, pasamos el tiempo, yo miro como va los niveles de liquido en el tubo y la acquision. Cada evento se muestra como un punto, y podemos ver las varias poblaciones de diferentes tamanos. Viendo al panal de spectrum, podemos ver la mayoria de las celulas tienen un fluorescence comun. en caso de autofluorescence, la mayoria del senal en nuestro caso es UV7 o V3 con una intensidad fluor media de en una escala logica biexponencial en contra, par a el control de referencia, vemos la mayoria de la senal detectado en el detector R1, YG yellow green, osea amarillo verde.</p>
+<p>Y notemos que es solo una poblacion que lo tiene, o sea, las celulas cual el anticuerpo atajo causando que podemos visualizaros con ese color. Donde esto no ocurrio porque era otro tipo de celilar con otros markers, quedan sin color, o sea negativos en fluoescence y solo vemos la senal basica.</p>
+<p>Continuando aqui hay unos otros cuantos ejemplos de cosas que podemos disenuir del spectrum plot. y en caso de los full-stain, todo esta mesclado para la mayoria de las senales y no podriamos discriminar que senal provenee de que.</p>
+<p>Por eso, vamos a necesitar hacer el proceso de unmixing, en proveendo referencias de control para cada fluorophore, y el unstained, podemos extraer las signatures espectrales de cada uno. Estos son unicos y sirven como huellas de dedos usados para inferer en el nivel de cada evento full stain los marcadores que estan presenste y su abundancia general.</p>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Made with <a href="https://quarto.org/">Quarto</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p><img src="../../../images/AGPL3.png" class="img-fluid" alt="AGPL-3.0"> <img src="../../../images/CCBYSA.png" class="img-fluid" alt="CC-BY-SA"></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

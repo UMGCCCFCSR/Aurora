@@ -1,0 +1,123 @@
+---
+title: "Cytek Aurora"
+format: html
+---
+
+Este es la documentacion para en eltrenamiento para utilizar uno de nuestros Cytek Aurora. Si preferies ver este entrenamiento de forma de un video, por favor procide a [YouTube](https://www.youtube.com/@CytometryInR). 
+
+# Empezando
+
+Si eres el primer usuario del dia, vas a tener que prender el instrumento y hacer los chequeos de control de calidad. 
+
+## Rellenando contenedores
+
+### Rellenando Sheathe Fluid
+
+Antes de comenzar, recomiendo que cheques los niveles de liquido en los contenedores de "sheathe fluid" y "waste". El "sheathe fluid" en nuestro "flow core" consiste de agua ultra-pura que fue filtrado por nuestro sistema de MilliQ, que esta ubicada adentra del cuarto de sorteo. Si estas aqui antes o despues de las horas de negocio, puedes encontrar las llaves adentro del primer cajon del escritorio de Mikayla. 
+
+Recomemdamos que todo usuario use guantes mientras interactuando con los instrumentos. Aunque toda celula debe estar "fixed", el uso de contrad y cloro es suficiente que hemos encontrado mejor poner guantes en ves de por accidente quedar en contacto. Ademas, ayuda reducir chance de contaminacion al cuarto de sorteo. 
+
+### 
+
+Para el waste, si esta mas de mitad lleno, es recomendado que lo vacies. "EHS" requiere que para disenfectar, an~adimos suficiente cloro para que al nivel final de lleno la contentracion de cloro sea a 10% de todo el volumen del contenedor. 
+
+Algo para considerar, es que la botella esta conectada con el "cytometer" por medio de ambo el tubo por cual viaja el "waste", pero tambien un cable por cual el instrumento puedo verificar el nivel. Porque este cable puedo ser dan~ado si lo "envolvemos", para remover, recomendamos que agarramos la botella por medio de la capa, y giramos la botella hacia la "derecha?" hasta que se desconecta. Con esto hecho, agarrando con dos 
+
+ Para el waste, para sanitizar todo, necesitamos anadir cloro para que el volumen final la concentracion quede al 10%. Cuando el tanque/contenedor de waste este lleno, lo que hacemos es agarrramos la capa de la botella, y giramos la botella. Luego al desconectar, ponemos la capa y los tubos de intake en el contenedor temporario. 
+
+De ahi, vamos y descartamos con cuidado en el sink. Despues, hacemos un rinse con agua para que no quede nada y para que todos con cual compartimos esto cuarto no estemos oliendo cloro por el resto del dia. Luego, regresamos a lado del LSR-II done guardamos el cloro, y lo rellenamos hasta la line roja, que es lo que necesitamos anadir para el volumen final del 10%. Estos contenedores son un poco mas de 4L, o algo asi. Para el sheathe fluid, no removemos la capa como es el caso con el cloro. La razon es que el waste tiene un sensor electronico, que puede causarnos problemas si lo movemos demasiado, asi que mejor no molestarlo mas de lo que sea necesario. 
+
+Para el sheathe, presionamos el boton, que release libera la conexion con los ubos de plastico. De ahi llevamos este al estacion de agua MiliQ, y lo rellenamos ahi. 
+
+Si estas aqui durante la semana, normalmente vas a encontrar los instrumentos ya predidos y listos para usar. Eso es porque yo ya estube aqui mas temprano, los prendi, limpie y asegure que pasaron sus chequeos de qualidad, osea, QC. Si llegas depus de horas, o durante el fin de semana, lo que haces es el boton para prender in instrumento esta del lado izquierdo, casi hasta arriva, presiona fuerte para dos segundos para prender el instrumento. 
+
+Desde ahi, asegura que la computadora este prendida, usa la contrasena comun para el instrumento cuando Windows pregunte para la contrasena. Cuando todo termine de inicear, lo que vas a brier es el software SpectroFlo, el shortcut atajo que puedes encontrar aqui. 
+
+Al iniziar, el software verifica que tienes contrato con Cytek por medio de un SpectroFlo dongle. Por lo menos es el caso con la version 3.2, solo necesitas el dongle puesto en el slot de USB al momento de inicear el software. Si tienes el software instalado en tu laptop/portatil, y quieres analizar n otro lugar por un rato, puedes remover el USB de una maquina que nadie esta utilizando, enchufarlo en tu laptop, entrar tu contrasena, remover el USB y regresarlo al instrumento. Siempre y cuando no te olvides y accidentalmente cierres el programa, vas a poder hacer tu analisis. 
+
+En fin, estos SpectroFlo dongles vienen con nuestros instrumentos y queden asi. Asi que siempre estan enchufados con las computadoras de sus respectivas maquinas. Asi que al comenzar el instrumento, podemos procedir directamento entrando la contrasena. 
+
+El user se crea por un login del account Admin. La contrasena de Admin es ..., si lo se, una contrasena fortisima no creen. De ahi, a ____ y creamos un nuevo usuario. Nombre, contrasena y aqui prolomenos por si acaso se te olvide la contrasena, underscore y el apellido del primer investigador del laboratorio en cual trabajas. 
+
+Al regresar a la pagin de login, podemos ver las varias opciones. Para este entrenamiento, voy a concentrar en explicando solo como usar el mode spectral, el modo convencional puede esperar para otro dia. 
+
+Desde aqui, despues del login, vemos varias opciones. La mayoria del tiempo para un user, simplemente vamos a estar usando el tab acquision. Vamos a enfocarnos aqui para el momento. 
+
+Cuando ya estamos ahi, lo que necesitamos hacer es seleccionar crear un nuevo experimento (en vez de importar un experimento que ya fue previamente creado). Desde aqui, vemos el primer tab, que es donde podemos nombrar nuestro experiment, y seleccionar los fluorophores. Para anadir fluorophores, podemos empezar entrando sus nombres y si ya estan parte del sistema van a aparecer solo los fluorophores que tienen en comun lo que ya teclaste. AL encontrar cual estabas buscando, puedes anadir o hacer un doble clikc para anadirlo. Borra lo que teclaste, y repite el proceso para el resto de tus fluorophore. 
+
+Algo que recomiendo yo es que anadelos en order basado en su detector, osea en que lugar el lightspectrum su emisiom maxima ocurre. La razon es que el software va organiza sus controls de referencia basado en este orden que anades los fluorophores en esta pagina, y puede causar dolores de cabeza cuando los organizes de otra manera. Obviamento, preferencia personal, pero cuando estas cansado, descafinado y despelucado aqui despues de horas, vale la pena menos esfuerzo mental de encontrar cual tubo va donde. 
+
+En la segunda pagina, tab encontramos donde podemos anadir groupos a nuestro experimento, adentro del cual podemos agregar tubos ubes para specimens individuales. Como organizas tus experimentos va depender de con que estas trabajando, en mi caso, con especimens clinicos, es el numero de identificacion del paciente como grupo, y la condiction en particular del tratamiento como el tubo. 
+
+Lo importante es que todos los tubes que anades son specimens, que estan stained con la mescla que contiene todo los fluorophores de tu panel. Para que un experimento de citrometria de flujo spectral funcione, necesitamos tambien proveer otras dos cosas. Tubos conteniendo celulas que no hemos stained con un fluorophore, osea, los unstained. Y que sirven como referencia de autofluorescence. y los controles de referencia individuales para cada uno de tus fluoropjores que tienes en tu panel, o sea, los single-color controls. Como exactamente estos son utilizados, hablaremos mas sobre ellos alrato. 
+
+Para el momento, los anadimos encontrando el boton de referencia del group arriva  en medio de la pantalla, que tiene un pequeno lapiz como su imagen.  Desde aqui, las referencias ya anadidas aparecen para los fluorophores que seleccionaste en la pagina previa. Lo importante de esta pagina es uno, anadir los nombres de los markers asignados, para sus respectivos fluorophores. Despues que entrastes todos, selecciona si tu control de referencia es celulas o beads. Eso informa el sistema cual usar para la subtraccion de autofluorescence. Luego, seleccionas tu preferencia de cual AF quieres usar para la subtraccion. Si lo dejas sin seleccion, anadira ung ate negativo interno en addicional del gate positivo para cada specimen. Esto puede funcionar, pero tambien puedo causar problemas si tienes fluorophores que causan non-specific stains. 
+
+Lo opcion normal es que uses un unstained universal, esto te permite dar una referencia de control separado. Esto ayuda esquivar el escenario en cual que el fluorophore anade senal al negativo, que cause que incrementan. 
+
+Para anadir otro unstained, seleccionamos esta opcion aqui arriva. Mi practica nornal es nombrar los unstained adicionales basado en que populacion de celulas van a representar si lymphoctyes, ___, ___. o celulas muriendo o ya muertas. 
+
+Si quieres anadis mas referecias de lo que ya tienes, vas a tener que ir hasta abajo de la pagina a la izquierda, y seleccionar tus opciones. Esto anade un tube de referencia adicional, que puedes cambiar el nomre del fluorophore. Etc como habiamos dicho antes. De aqui procedemos a la pagina que sigue. Esta pagina es donde decimos a SpectroFlo cuantas celulas queremos acquirir. Esto podemos especigicar basado en tubos individuales, al nivel del grupo, o del experimento entero. 
+
+La primer columna refiere a cual guate estamos usando par ael crierio de numeros de celulas acquirrido. Yo normalmente quiero acquirir todas las celular, pero si quieres acquirir algo mas especifico, digamos, 5000 celulas cd4, si ya creaste esas puertas, en el tempate, en el drop-down puedes seleccionarlo. 
+
+Continuando, puedes decidir si en la version final del fcs file solo quieres tener celular que cayeron adentro de un gate. Esto puede ayudar reducir el tamano de los files. pero al mismo timepo, estas a la merced de que para cada uno de tus especimens aquiridos todas las puertas gates van a estar en la misma posicion, si esto cambia, estas jodido. 
+
+Con estas 2 columnas ya decidias, podemos especificar cuantos eventos queremeor acquirir, Recurerda que este numero cuenta celular, doublets, y quiza debris, dependiendo que hemos basado como nuestro gate. La siguente columna especifica el volumen para tomar. Recuerda que el volumen que anades va ver un poco que se pierde al comienzo antes de que visualizes las celulas, lo que intentamos hacer es que no quedemos sin volumne y que el instrumento este simplemente tragando aire por sus tubos en vez de liquido. 
+
+Y misma situacion, podemos especificar un parro basado en timepo. Ajora, no usamos esta categoria de parra por biologia, normalmente usamos eventos o volumne. Pero si eres como yo, y no estas monitoreando a cada seguno porque te distraes, lo que queremos prevenir es un caso cuando hay un clog, y no esta icnrementando los eventos or el volumen, y continua por horas en el mismo tubo. O vice versa, cuanda ya no hay volumne, y el numero de eventos no esta cambiando, y solo esta tragando aire el instrumento. Por eso, lo que hago yo es calcular si en acquision a velocidad rapido son 70 microlitros por minuto, y tengo alrededor de 200 microlitros total por tubo, si pongo el parro de tiempo a quatro minotos ( o sea 240 segundos) solo estaria jalando aire por un minuto en  el peor caso.
+
+Y el critero de cambio evento y volumen esta, aunque no lo uso. Lo unico mas es la columna de template, en el momento esta seleccionado raw or crudo, pero despues del unmixing lo vamos a cambiar. Demonstrare porque en un ratito. 
+
+Bueno pues, esta pagina puedes anadir palabras claves, osea keywords, que puedes utilizar adentro de los files fcs para determinar a que grupo pertenicia cual file, pero eso es algo mas unico a tu proyecto, y no mensionare mas de como hacerlo en el momento. 
+
+Y de aqui, seleccionamos para continuar. Ok, ahora estamos en la pagina del experimento, vemos todos los tubos y grupos que anadimos ya en el lado izquierdo. Tambien tenemos el panal de control del instrumento, con botones para empezar, record, pausar y parrar, e el sitflush limpeo del intake debajo aparece numero de eventos acquiridos arriba de los ya acquiridos. Vemos microlitros por minutos de volumen, velocidad baja, media o alta. Eventos abortados cuanto eventos que el einstrumento empezo a contar pero no pudo con suceso. Eso normalmente son pocos, pero si estas acquiriendo muy rapido, o con na alta concentracion, aumentan como un porcentaje. 
+
+A que velocidad deberias acquirir? A que concentracion deberias quedar? Eso depende de tu proposito. Si queres la mejor cualidad acquiere todo a la velocidad lenta, con una concentracion baja, no vas a tener ningun problema con eventos abortados. Al mismo tiempo, vas a estar qui todo el dia. Vice versa si tu populacion de celulas son un porcentaje muy pequieno de la poblacion, y quieres suficiente eventos para investigarlos, vas a tene que acquirir millones de eventos, asi que vas a tener una concentracion muy elevada o velocidad rapido para que esto suceda. Lo mas importante, haz lo que sea necesaria para no causar un clog, porque en ese caso, pierdos tus specimens, y estaras ahi mas tiempo arreglando el problema de lo que hubieras estado si solo estubieras acquiriendo a una velocidad mas lente desde el comienzo. 
+
+Hay tambien opcion de cuantos eventos necesitamos mostrar en la pantalla en cualquier momento, cambia este si tu computadora empieza a trabarse o tiene menos especificaciones de memoria, etc. 
+
+Y el ultimo panal debajo es el settings intrumentales, ete va ser el cual vamos a utilizar mas en el momento porque necesitamos asegurar que podemos visualizar nuestras celular y resolver diferencias de tamano. Debajo, si tu instrumento tiene un plate loader, esa los controles para usarlo, pero mas sobre esto alrato. 
+
+Continuando, el area de la derecha es donde visualizamos templates. Estos existen en dos formas, raw o unmixed. Osea, muestran la informacion raw/cruda mostrando detectores individuales o unmixed, de mesclada en cual caso muestro los fluorophores. Tambien tenemos un plot para ver los spectrums de lo que andamos acquiriendo. En el defalt vemos FSC SSC. 
+
+El concepto de FSC/SSC es y de SSC-B es ...
+
+En fin, quedamos con el default para ahorita, y lo cambiaremos guardaremos con otro nombre al rato. 
+
+Ultima cosa antes que empezemos, un cytek Aurora tiene ventaja qde que sus chequeos de cualidad son para mantener un MFI estable, permitiendo comparar specimens acquiridos hoy contra otros collecionados la semana pasada, mes pasado, o en teoria hace an~os. en Teoria. Esto es por la utilizacion de beads, que venden en lots. En el momento estamos usando el lot 2006. 
+
+Es recomendado acquirir hacer el chequo de cualidad automazida diariamente. Para hacer eso, navegamos al lado izquierdo arriva y seleccionamos el QC, con su imagen de citometro. 
+
+De ahi a DailyQC, osea chequeo cualidad diaria. Aqui podemos ver si el instrumento a pasado QC o no. Cytek en el momento tiene los siguentes criterios para decidir si algo esta fallando o no. El gain, que puedes pensar como voltaje en otros instrumentos, es adjustado dia a dia para mantener el nivel de intensidad designada para cada detector. Continuando, habia un nivel original, si este es mas que doble lo que era originalmente, en este casa va a fallar el gain. Si cualquier detector falla en su gain, el reporte automaticamente va aparecer como fallado. 
+
+La otra metrica es %rCV, que captura como dispersionado esa la poblacion. Cuando los laseres y detectors estan afinados y en buenas condiciones, no va ver mucha dispersion y todo estos porcentajes estaran menos de 6. Si son mas que 6 o 8, es cuando notaremos quiza hay un problema resolviendo entre nuestras populaciones de celular que son dim en sus marcadores. 
+
+Lo que necesitamos recordar, es que cytek no tiene criterios de falla para todos los detectores, solo para el tercero de cada laser. En ese caso, si el porcentaje es mayor que 3 en el tercer detector, fallara el detector y el reporte. Pero si occure el el 16avo, nada. Esto no significa que no hay problemas, simplemente que no sera reportado, Asi que lo que yo hango es mirar todo rapidaente aqui por si acaso. 
+
+La razon para rastrear lo que ocurre aqui es los instrumentos cambian dia a dia y con el paso tiempo el poder del laser va bajando. Aqui en la universidad de maryland, andamos monitoreando nuestros instrumentos, podemos visualizar los cambios. Que haces si galla/fallo un reporte? Mayor pare del tiempo, es que el instrumento no a tenido suficiente tiempo para calentar o necesita un poco mas de limpieza. Asi que normalmente relimpoiamos con un detergente contras y despues con agua. Igualmente el instrumento necesita calentar antes de empezar, asi que damos 15-30 minutos para que sea suficiente. Los beads tambien son suceptibles cuando estan expuestos a cloro, que causa que pierdan partes de su fluorescence. 
+
+Enb fin, ya que tenemos estos detallitos de contexto, empezemos. Primero, ponenomos el tubo de unstained a velocidad low/lento. que echemos vortex, luego el click. Luego, con el raton asegura que estemos en el lugar correcto, indicados por la flecha verde.Y empezamos seleccionando, y hacemos click al empoezar. En estos momentos, el sample esta succionando desde el tubo hasta que las celulas pasen por el flow cell, pasando ahi por los laseres. Estos eventos vemops en la pantalla, y hacemos el proceso de finar la posicion de nuestras celulas. Lo que queremos hacer es asegurar que todo mas o menos quede central, que podemos resolver entre las diferentes populaciones, etc. 
+
+Aumentamos, le quitamos, etc. Y dejamos un poco de espacio blanco alrededor por si acaso hay eventos que no conforman a lo normal. En case de un especimen que no se ve como los demas. Y guardamos las configuraciones con nuestros iniciales de nombre, undescroe, y el nombre del tipo de celulas. 
+
+De ahi, el threshold sirve para poner el limite de detecion menor, o record, porque el sistema puede tener ruido electronico que tambien son tratado como eventos. En est caso, lo ponemos a 200k o la primera yar que permite todavia ver las celulas que andan muriendo. Y aqui guardamos, lo unico mas de adjustar el fsc scaling es para otro dia. Asegura que el FSC SSC podemor acquirir -H, -W, y -A para resolver celular dobles, pero no en el caso de los detectores individuales. 
+
+Como resolvemos celulas dobles, bueno....
+
+Y guardamos y acquiremos unos eventos para poder anadir grupos puertas. Pueden ver los voltajes de los laseres para cada detector. En comparacion con otros instrumentos convencionales, no es recomendado adjustarlos individualmente. Esto es porque distorcionan como se percibe las senal, afectando como quedan las signaturas fluorescentes finales. Esto puede causar que no son comparables con senales acquiridos en otros dias. Adicionalmente, al cambiar uno, ya no tienes el beneficio del cheqo de cualidad del instrumento, y quedaras en una rama alternativa de donde todo queda como estuvo en el dia que originalmente acquiriste. que no refleciona el estado actual de la maquinia o del instrumento. 
+
+Ahora que estamos listos, collecionamos el primer control de referencia. Cuantos eventos necesitas depende si estas acquiriendo con celulas o beads. Como decidir entre celulas o beads? Bueno....
+
+Algo alrededor de 5000 beads es suficiente, en celulas depende de tu marker, yo normalmento quiero acquirir entre 50k o 200k eventos. y notamos cuanto volumen habia en total con esto hecho, regresamos al boton de lapiz, para edit, y de qui vamos a acquision y de ahi cambiamos a eventos deseados par avarios markers del panel, y el volumen a que tenemos en el momento. 
+
+Y continuamos, vez en este caso no avanzo automaticamente, si quieres que haga esto, lo que hacemos es..., navegamos a ...., seleccionamos y se ve asi en la proxima. 
+
+Y ahora, pasamos el tiempo, yo miro como va los niveles de liquido en el tubo y la acquision. Cada evento se muestra como un punto, y podemos ver las varias poblaciones de diferentes tamanos. Viendo al panal de spectrum, podemos ver la mayoria de las celulas tienen un fluorescence comun. en caso de autofluorescence, la mayoria del senal en nuestro caso es UV7 o V3 con una intensidad fluor media de en una escala logica biexponencial en contra, par a el control de referencia, vemos la mayoria de la senal detectado en el detector R1, YG yellow green, osea amarillo verde. 
+
+Y notemos que es solo una poblacion que lo tiene, o sea, las celulas cual el anticuerpo atajo causando que podemos visualizaros con ese color. Donde esto no ocurrio porque era otro tipo de celilar con otros markers, quedan sin color, o sea negativos en fluoescence y solo vemos la senal basica. 
+
+Continuando aqui hay unos otros cuantos ejemplos de cosas que podemos disenuir del spectrum plot. y en caso de los full-stain, todo esta mesclado para la mayoria de las senales y no podriamos discriminar que senal provenee de que.
+
+Por eso, vamos a necesitar hacer el proceso de unmixing, en proveendo referencias de control para cada fluorophore, y el unstained, podemos extraer las signatures espectrales de cada uno. Estos son unicos y sirven como huellas de dedos usados para inferer en el nivel de cada evento full stain los marcadores que estan presenste y su abundancia general. 
+
