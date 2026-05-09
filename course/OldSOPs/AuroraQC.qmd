@@ -1,0 +1,221 @@
+Aurora III, IV, IV: Quality Control 
+
+Shape 
+
+*Should do QC on machine ~1 hour before appointment* 
+
+Cytometer Check 
+
+Check Milli-Q water levels in sheath tank and refill with Milli-Q water if needed 
+
+Check waste levels in the waste tank and pour down the sink if full. Pour a layer of bleach (enough to cover the bottom) in the tank and reconnect to the cytometer 
+
+If needed, refill: 
+
+Non-sterile tube container 
+
+1mL pipette container 
+
+Contrad, PBS, and Milli-Q bottles 
+
+70% ethanol bottle 
+
+ 
+
+Turn On 
+
+Make sure the computer tower is on 
+
+Lift the hood of Aurora to check for leaks. If no leaks, close hood 
+
+Select “SpectroFlo” software icon and login (software takes ~1 minute to connect) 
+
+Aurora III and IV 
+
+ID: Flow Core 
+
+Password: Flow 
+
+Aurora V  
+
+ID: Admin 
+
+Password: Admin 
+
+While softwrae is loading, press the button on the side of the Aurora to turn on 
+
+Select the “Acquisition” option and a new page will appear 
+
+Wait ~3 minutes for the Sheath, Waste, and Cytometer sensors at the bottom of the screen to turn green 
+
+Sensors will initially be yellow. If red, log out and log back in 
+
+Once all the icons are green, (excluding “loader” on A4 and A5) the cytometer is ready to 	 
+
+Clean Flow Cell  
+
+Click the cytometer button on left hand side and open “Clean Flow Cell” follow the steps using CONTRAD instead of BLEACH. Do not click COntinue until you have added the next tube 
+
+Once completed click done  
+
+Washing 
+
+Click on tube icon on the left side. 
+
+Click on “My Experiments”  
+
+Open the QC folder for the corresponding month.  
+
+Click the “Add Tube” icon twice to make two new tubes 
+
+Label the tubes as “today’s date Before” and “today’s date After” 
+
+14 Before 
+
+14 After 
+
+Select a tube to run the washing 
+
+ 
+
+1st Cleaning (contrad and water) 
+
+Label two 5mL tubes as Contrad and Water 
+
+Fill contrad and water tubes with 3mL (or around halfway) with the appropriate liquid 
+
+Remove the old water tube from port and allow Aurora to flush itself  
+
+The Aurora should ALWAYS have a water tube connected to it when on standby 
+
+The Aurora will make a noise during the flushing process 
+
+Flushing is complete when SIT Flush tab on computer turns blue again – DO NOT ATTACH a new tube until flushing is finished (noise should stop) 
+
+After flushing is complete, attach the contrad tube to the Aurora 
+
+On the software, set the flowrate to High, then select START 
+
+Run contrad tube for ~10-15 minutes 
+
+After 15 minutes, select STOP on the software, and remove the contrad tube and allow Aurora to flush itself (check SIT Flush tab)  
+
+After flushing is complete, attach the water tube to the Aurora 
+
+On the software, set the flowrate to High, then select START 
+
+Run tube for ~10-15 minutes 
+
+After 15 minutes, select STOP on the software and remove the water tube and allow Aurora to flush itself (check SIT Flush tab)  
+
+ 
+
+QC (non-sterile CST beads) 
+
+First Manual QC 
+
+On the software, select the BEFORE tube 
+
+Label a new 5mL tube as SPFL date 
+
+Add ~500uL Milli-Q water to SPFL tube  
+
+Take out the “SpectroFlo beads” vial from fridge 
+
+Vortex the SpectroFlo beads tube for ~3 seconds  
+
+Add ONE drop of SpectroFlo beads to the water in the tube 
+
+Vortex the tube for of SpectroFlo and water for ~3 seconds  
+
+If water tube is still attached to Aurora, remove water tube and allow Aurora to flush itself (check SIT Flush tab)  
+
+Attach SPFL tube to Aurora 
+
+On the software, set Flow Rate to LOW, then select START 
+
+After a few seconds, points should be points on the graphs and there should be an increasing Event Rate (evts/s) 
+
+Ensure your Event Rate (evts/s) is ~200 
+
+If the Event Rate is LOWER than ~200, add ONE additional drop of SpectroFlo beads to the SPFL tube (be sure to vortex bead tube before adding drop) 
+
+If the Event Rate is HIGHER than ~200, add a few drops of Milli-Q water to the SPFL tube  
+
+Ensure the plotted points in the graphs are within the gates on the software 
+
+If it is not, alert Dr. Fan of the issue 
+
+Select “Record” on the software, and the Aurora will automatically stop running when the recording is complete  
+
+Remove the SPFL tube and allow Aurora to flush itself (check SIT Flush tab)  
+
+ 
+
+Automated QC 
+
+Vortex the SPFL tube and reattach back to Aurora 
+
+On the software select the “QC Setup” tab at the top right of the screen 
+
+Allow new page to load (this will tkae a few second), and select START to run the automated QC 
+
+Automated QC will automatically record and takes ~1 minute to load, and ~3 minutes total to complete 
+
+Once Automated QC is complete, select the “Acquisition” tab at the top right of screen to return to the original page  
+
+Remove the SPFL tube and allow Aurora to flush itself (check SIT Flush tab). Aurora flushes itself TWICE after Automate QC  
+
+ 
+
+Last Manual QC 
+
+Vortex the SPFL tube and reattach back to Aurora 
+
+On the software, select the AFTER tube 
+
+Double-check that Flowrate is still set to LOW, then select START 
+
+Wait for Event rate (evts/s) to reach ~200, and plots on graphs to appear 
+
+plot to appear 
+
+Select “Record” on the software, and the Aurora will automatically stop running when the recording is complete  
+
+Remove the SPFL tube and allow Aurora to flush itself (check SIT Flush tab) 
+
+QC is complete. There should be two new QC recordings: BEFORE and AFTER 
+
+Select, SAVE to save QC run. Aurora does NOT automatically save 
+
+Place SPFL bead tube in fridge (DO NOT THROW AWAY!) 
+
+ 
+
+ 
+
+2nd Cleaning (contrad and water) 
+
+If needed, refill contrad tube to halfway and attach to Aurora 
+
+On the software, set the flowrate to High, then select START 
+
+Run contrad tube for ~1 minute 
+
+After 2 minutes, select STOP on the software, and remove the contrad tube and allow Aurora to flush itself (check SIT Flush tab)  
+
+If needed, refill water tube to halfway and attach to Aurora 
+
+On the software, set the flowrate to High, then select START 
+
+Run tube for ~2 minutes 
+
+After 5 minutes, select STOP on the software and remove the water tube and allow Aurora to flush itself (check SIT Flush tab)  
+
+Reattach water tube to Aurora. Water tube is always on Aurora when off or on standby 
+
+Select, SAVE and Log Out  
+
+ 
+
+Turn off after use: (1) On software, Fluidic Shutdown tab will give you directions 

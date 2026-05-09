@@ -1,0 +1,19 @@
+Hi  _______, 
+
+With the severe research restrictions in effect we just wanted to highlight a few areas to pay attention to when using the Aurora to keep it running properly: 
+
+MilliQ Water:  The only water that should be used for the Aurora is from the MQ system that is located in the sorting room.  The sorting room is locked so you will need the key that is found in the top drawer on the right side of Dr. Fan’s desk (The one with the giant wooden crate in front of it).  The key will have a red string attached to it. 
+
+Startup:  When the cytometer is initially booted up the reservoir tank may potentially overfill so please keep an eye on that, if it starts to over fill just turn off the cytometer and turn it back on.  To see the reservoir tank, open the front of the instrument (lift top lid then open the front door).  Once the water level stabilizes you can shut the front of the machine. 
+
+There can be a connection issue between the computer and cytometer when first connecting for the day.  If you notice a red x icon next to “cytometer” on the bottom right hand of the screen shut down the SpectroFlo software and turn off the cytometer.  I also make sure that the connector from the cytometer to the computer is secure (back right of cytometer).  Turn everything back on and the cytometer will connect (you will know it’s working when portions of the cytometer start moving). 
+
+To warm up the lasers, run water through the instrument for about 10 min. 
+
+Shutdown: Same procedure as usual, run “Fluidics Shutdown.” 
+
+This should help with any initial issues that you might have.  I am available via phone (my cell is if you have any additional questions.  Please do not hesitate to reach out if you need anything. 
+
+Thanks, 
+
+  Bryan 

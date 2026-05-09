@@ -1,0 +1,109 @@
+Aurora Plate Loader Guide 
+
+Cytek Loader Tutorial 
+
+Start Up 
+
+Make sure that tube is loaded onto Aurora for initial calibration of sample probe. 
+
+Remove tube from holder once the initial calibration is completed and the Cytometer is showing ass “Connected.” 
+
+Pull lever on loader to the front position. 
+
+Turn on loader via the button in the back. 
+
+Template Set Up 
+
+Go to “Preferences” tab 
+
+Under “Sample Delivery Mode” select “Plate” 
+
+Check the box for “Bubble/Clog Detection” 
+
+Return to “Acquisition” tab. 
+
+Click “Add Plate” 
+
+Select appropriate type of plate 
+
+Label plate accordingly 
+
+Click on “Edit” icon 
+
+Select “Groups” tab 
+
+Select wells that need to be acquired 
+
+Can add multiple groups to a plate or make entire plate a single group 
+
+Select “Acquisition” tab 
+
+Set “Worksheet” to appropriate worksheet you would like to use 
+
+Set “Events to Record” to an appropriate value 
+
+Set “Storage Gate” to appropriate gate 
+
+Set “Stopping Volume” to an appropriate vale 
+
+We used 110 µL on Friday. 
+
+Select “Loader Settings” tab 
+
+Select the appropriate direction for sampling by selecting the arrow icons 
+
+Set “Mix Time” to “4” 
+
+All other settings should be fine. 
+
+Sample Probe Depth Check 
+
+Create a new plate with a sample only in well D1 
+
+Use an empty plate and fill D1 with water or PBS 
+
+Run the sample and look at the probe depth while running 
+
+If sample probe appears to touch near the bottom of the plate, you are ready to run samples 
+
+If sample probe is too high: 
+
+Go to “QC& Setup” side tab 
+
+Click on “Calibrate SIT” 
+
+Change the value to a smaller number 
+
+Run plate again to evaluate new SIT depth setting 
+
+Run Plate 
+
+Select a well to record data for 
+
+Select an appropriate acquisition speed 
+
+Click “Record” button and select “Record Well” 
+
+If sample settings seem appropriate select “Record Plate” on “Record” button 
+
+Shut Down 
+
+Move the lever to adjust the loader to the off position (Move lever to the back) 
+
+Turn off loader 
+
+Under “ Preferences” Tab switch back to “Tube” under “Sample Delivery Method” 
+
+Wash with Contrad 
+
+Wash with Water 
+
+Perform a “Fluidics Shutdown” and turn off Aurora  
+
+Troubleshooting/Notes 
+
+If plate holder is not in position to load a plate onto it click “Eject” button to return it to the proper position. 
+
+ 
+
+  
