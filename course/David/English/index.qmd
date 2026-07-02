@@ -1,7 +1,18 @@
 ---
 title: "How-to-use the Cytek Aurora"
 format: html
+toc: true
 ---
+
+# Background
+
+This is a walk-through for how to use the Cytek Auroras. 
+
+# Walk-through
+
+## Startup
+
+## Getting Started
 
 Upon opening the software, you will reach the login screen
 
