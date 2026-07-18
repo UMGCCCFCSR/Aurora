@@ -1,18 +1,111 @@
 ---
-title: "How-to-use the Cytek Aurora"
+title: "Instrument Tutorial: Cytek Aurora"
+author:
+  - name: David Rach
+    orcid: 
+date: 07-18-2026
 format: html
 toc: true
+toc-depth: 5
 ---
+
+![](/images/ISAC%20SRL%20Full%20text%20Large.png)
+
+::: {style="text-align: right;"}
+[![AGPL-3.0](https://img.shields.io/badge/license-AGPLv3-blue)](https://www.gnu.org/licenses/agpl-3.0.en.html) [![CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-sa/4.0/)
+:::
+
+For the YouTube livestream recording, see [here]()
+
+For screen-shot slides, click [here]()
+
+<br>
 
 # Background
 
-This is a walk-through for how to use the Cytek Auroras. 
+This instrument tutorial contains a walk-through of how to use the [UMGCCC FCSR]()'s [Cytek Aurora] spectral flow cytometers. It is meant to complement the in-person trainings and serve as a quick reference for those just learning how to use the instruments.  
+ 
+# Start Up
 
-# Walk-through
+At the [UMGCCC Flow Core Shared Resources]() during business days, our Cytek Aurora's are typically started by staff and have passed through the quality control steps by 10 AM. If however, you have the misfortune of being here after hours our on the weekends, if you want good quality data, you are responsible for startup and running QC. 
 
-## Startup
+First off, locate the cell sorter room key in the drawer under our [Flow Cytometry Shrine](). Proceed to open the door, prop with the door-stop, and return the key to its drawer. 
 
-## Getting Started
+## Changing Sheathe
+
+Before starting, check the sheathe fluid container on the left side of the instrument. If it is running low, press the connector to dettach the fluidic line. Carefully carry the sheathe container to the sort room. 
+
+Touch the MilliQ station screen to waken the system (and if applicable close any pop-ups). On the outside of the sheathe container, each sharpie line denotes 1 liter. Designate the amount of liquid to dispense on the MilliQ screen. 
+
+Unscrew the lid, and leave it propped on the side. Proceed to start the MilliQ station and fill. Keep an eye on it just to ensure no issues are encountered. Once full, stop the MilliQ, tighten the lid, and then carry the bottle back to the Aurora. Proceed to reconnect the fluidic line. 
+
+## Changing Waste
+
+Due to our Enviromental Health and Safety (EHS) agreement, all waste needs to be resuspended in 10% bleach to ensure it is disinfected before it is flushed down the drain. Check to see the current level to determine whether you need to discard the waste before getting started. Generally, if there is more than 2 liters on the bottle (as designated by the sharpie marks), we recommend going ahead and emptying it. 
+
+Tap the lid twice to ensure any droplets in the cap drop down into the waste container. The waste container has a sensor line that is connected to the Cytek Aurora. It is important not to twist it (avoiding supercoils). Therefore, unscrew the lid by twisting the waste container to the left while holding the lid steady. 
+
+Once this is done, with both hands, carefully walk the waste tank to the sink. If you need assistance, grab the cart from the cell sorter room entryway and roll it to the sink. 
+
+Carefully, pour the waste down the sink, avoiding back-splashes to your arms, eyes or mouth. Once drained, turn on the faucet, and flush the sink with tap water for at least 30 seconds to avoid having bleach smell fill the entire hallway. 
+
+Carry the now empty waste container back to the bleach station under the LSR-II, placing it in the red secondary spill container to avoid bleach damaging the floors wax surface. Unscrew the household bleach cap, and pour up to the first red line on the outside of the waste container (roughly 3 glug sounds). Recap the bleach bottle. 
+
+Carefully return the waste with bleach to the Aurora, and screw back into place by twisting the container to the right while holding on to the cap. 
+
+## Powering On
+
+With the sheathe filled, and waste emptied, go ahead and power on the Cytek Aurora. This can be done by firmly pressing the power button that can be found on the upper left side of the instrument for a few seconds. You should hear the instrument power on and fans/cooling start up and remain on. 
+
+Proceed to waken the computer from sleep by clicking on the mouse or keyboard. In event it is off, press the computers power button and wait for the computer to boot and go through start-up. 
+
+All Cytek Auroras share the same password (see monitor screens white sticky note) for the computer login. After entering it, wait for Windows to complete logging in to avoid any computer stalls. 
+
+Double click on the SpectroFlo software icon, and wait for it to open. Proceed to login using your user account. 
+
+## Instrument Start Up
+
+Once the instrument is on, and software opened, the Cytek Aurora will undergo instrument startup. If no water 5 ml tube is placed on the sip, you will get a pop-up asking that you place one on the SIP. Once placed, you will see the SIP line drop down to the bottom of the tube a couple times, water will be uptaken, and internal resevoir flushed to waste tank. Once this process is complete, you will see the cytometer icon go from red, to yellow, to green. 
+
+At this point, the lasers are now on. However, we recommend waiting at least 15 minutes before running QC to allow them time to warm up and stabilize. This will ensure that when QC is run, it will be for the same conditions as when you are running samples, avoiding QC drifting mid-acquisition once the lasers have warmed up. Additionally, running QC too early can result in QC fail with innapropiate settings. 
+
+Since we are a shared resource facility, you are at the mercy of the last user. We consequently recommend running a Clean Flow Cell at startup to flush out the fluidic lines of any debris, remaining cells, etc. that the last user may have left. This can be done by opening the QC tab, and accessing the cytometer gear icon on the left-side of the screen. You can then select the Clean Flow Cell icon. 
+
+The pop-up will request a bleach and a water tube. Due to issues with bleach damaging the QC beads, we do not use bleach, but flush with contrad (a detergent) instead. Discard any old contrad, water, sample tubes on the rack, and prepare fresh contrad and water tube from the yellow and blue squeeze bottles next to the instrument. If these are low, borrow from the next instrument over. Fill only to half-the capacity of the 5 ml tubes (roughly the white holders on the rack) to avoid overflow when placed on the SIP. 
+
+Once the contrad and water tubes are prepared, place the contrad tube on the sip (pressing until you hear the click), and only then select Start on the pop-up. The instrument will start as soon as the button is clicked, regardless of the presence of a tube. It will proceed to rapidly flush the flow cell and fluidic lines with most of the contents of the tube. Once done, the sip line will withdraw from the tube and you will get a note asking you to switch in the water tube. Proceed to do so, and select start. It will then flush away any residual contrad from the lines. 
+
+At this point, generally still have 12 minutes for the instrument lasers to warm up. We will typically refill and then run the Contrad tube on High for 6 minutes, as it takes about that long to see events drop.
+
+At this point, we will refill and run the Water tube for another 6 minutes, flushing the remaining contrad and cellular gunk that may have built up from the previous day. 
+
+## Daily QC
+
+The Cytek Auroras are able to adjust detector gains to account for instrumental changes, allowing the analyzers to perform consistently over long periods of time despite changes that occur as the lasers approach end-of-life, and detector arrays experience wear and tear. To do this, the instruments are calibrated using SpectroFlo QC Beads, which have a standardized brightness for each detector. During automated QC, the instrument will adjust the gains up and down to ensure the QC beads that are run match the designated target for the specific bead lots. 
+
+Our SpectroFlo QC beads are stored in the fridge of the Cell Sorter room. To access the room, grab the key from the desk drawer under our [Flow Cytometry Altar](). Once the door has been opened, prop it with the door stop, and return the key to the desk drawer. 
+
+The keys can be found in the large fridge next to the MilliQ station. They are located in the small Cytek box in the door. Please make sure you grab the SpectroFloQC bead vial with the check mark on it located on the left side of the box, and not the Cell Sorter Beads that are on the right side of the box (which will not work for QC setting). 
+
+Grab a clean 5 ml polystyrene tube from the clean tubes container on the table. Dispense roughly 300 ul of MilliQ water (1 cm) to the botton of the tube. 
+
+Vortex the SpectroFloQC beads vigorously for 30 seconds. Carefully dispense 1 drop into the tube (avoid coming in contact with the tube surface to avoid contamination). Cap the SpectroFloQC beads and return them to their box in the fridge, making sure the door is also closed properly. Unprop and lose the door to the cell sort room on your way out. 
+
+With a permanent marker, label your tube "SPFL " and the corresponding date. Vortex vigorously for 20 seconds. Open the QC tab in SpectroFlo, place the QC bead tube on the sip, and press start QC. 
+
+The instrument will then go through the automated QC process, you will see individual detectors appear and dissaper as different gains are attempted to get them to reach their respective targets. Once stability is reached, bead acquisition will start and you will see beads be acquired. At this point, the sip needle will withdraw from the tube, and you will be notified whether instrument has passed or failed QC. 
+
+## Interpreting QC
+
+If the instrument has passed QC, congratulations, you are now all set, and can proceed with your experiment setup and acquisition. if the QC has failed, you will need to decipher what is going on. 
+
+On Cytek Aurora instruments, a QC fail can be trigerred in two manners. Either the gain for a particular detector is double the original value compared to the installation value (typical of end-of-life lasers) or the % rCV value for FSC, SSC  or the 3rd detector of each laser has exceeded 6 or 8 % (meaning increased spread). We track our instruments QC status on our website, where you can view the same data as shown on the instrument. 
+
+What to do in the event of a QC fail? First, note if it has also occured at another point this week. If it has, we are likely aware and are working to get a Cytek field-service-engineer out to make the repairs. If there has been no other fail, there are a couple possibilities. If the failure is because the instrument has not properly warmed up yet, running water for another 10 minutes will likely be sufficient. Alternatively, if the fail is due to debris build up on the flow cell, running contrad and water for another 10 minutes can be enough. Occasionally, if someone ran bleach despite warning, the QC beads can end up damaged, which in turn can affect the automated QC. 
+
+Scan the report and see if the result is due to gain changes or RCV (shown by red highlighting). If RCV, scan the column and see if multiple detectors are involved and are greater than 6%. If it is only one, or it is barely above the cutoff, you should be okay. If multiple, or values substantially greater, your data is likely to be affected. Reach out to staff if you have additional questions, or looking for advice. 
+
+# Getting Started
 
 Upon opening the software, you will reach the login screen
 
@@ -185,3 +278,18 @@ When the tube is removed from the SIP, a sit-flush is automatically trigerred, f
 To manually trigger an additional sit flush, you would press the sit flush button
 
 ![](/images/43_SitFlushManualTrigger.png)
+
+
+# Shut Down
+
+If you are the last user of the day (check the scheduling monitor or iLab) and it is after 4 pm, you are also responsible for shutting down the instrument. This is to avoid having the instruments left on overnight, since as long as the software is open and the instrument is on, the laser will continue to be on. This can accelerate wear and tear on the laser, and in the past resulted in scorch marks on the detector array. 
+
+To shut down the instrument, first run a [Clean Flow Cell]() with one tube of contrad, followed up by one tube of water. You can leave the water tube on the instrument, closing the black light covers.
+
+At this point, log out of SpectroFlo and close the software. Please leave the computer on however to allow for updates to occur.  
+
+Discard any leftover contrad, water or sample tubes into biohazard. 
+
+On the left side of the Cytek Aurora, you will find a power button. Press firmly for a few seconds and then let go. The instrument should shut off. 
+
+If you want to earn bonus points from staff, please refill the sheathe tank with MilliQ water from the cell sorter room (Bressler 7-022A), empty the waste container down the sink drain (flushing with tap water for a minute), and add bleach to the lower red line from the bleach bottle located under the LSR-II. We greatly appreciate your help. 

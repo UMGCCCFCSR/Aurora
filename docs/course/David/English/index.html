@@ -2,13 +2,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="David Rach">
+<meta name="dcterms.date" content="2026-07-18">
 
-<title>How-to-use the Cytek Aurora – UMGCCC FCSR</title>
+<title>Instrument Tutorial: Cytek Aurora – UMGCCC FCSR</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -36,10 +41,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-8eaec6b9941db0f18eecf13b95a46332.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-5c153bb687ce49b6c6529d158b94fe28.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -81,7 +86,7 @@ gtag('config', 'G-LZ35J3XE4D', { 'anonymize_ip': true});
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-sidebar floating nav-fixed fullcontent quarto-light">
+<body class="nav-sidebar floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -89,7 +94,8 @@ gtag('config', 'G-LZ35J3XE4D', { 'anonymize_ip': true});
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../../images/hex.svg" alt="" class="navbar-logo">
+    <img src="../../../images/hex.svg" alt="" class="navbar-logo light-content">
+    <img src="../../../images/hex.svg" alt="" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">UMGCCC FCSR</span>
@@ -102,8 +108,54 @@ gtag('config', 'G-LZ35J3XE4D', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../index.html"> 
-<span class="menu-text">Landing</span></a>
+    <a class="nav-link" href="https://umgcccfcsr.github.io/"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Resources</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-resources">    
+        <li>
+    <a class="dropdown-item" href="https://umgcccfcsr.github.io/Theory/">
+ <span class="dropdown-text">Flow Cytometry</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://umgcccfcsr.github.io/CellProcessing/">
+ <span class="dropdown-text">Experiments</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://umgcccfcsr.github.io/Aurora/">
+ <span class="dropdown-text">Instrument Tutorials</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://umgcccfcsr.github.io/FCSExpress/">
+ <span class="dropdown-text">Data Analysis</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://umgcccfcsr.github.io/FCSExpress/">
+ <span class="dropdown-text">UMGCCC Flow Core Shared Resource</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-courses" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Courses</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-courses">    
+        <li>
+    <a class="dropdown-item" href="https://umgccfcss.github.io/CytometryInR/">
+ <span class="dropdown-text">Cytometry in R</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://umgccfcss.github.io/BISCC_2025/">
+ <span class="dropdown-text">Baltimore Introductory Spectral Cytometry Course</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://umgccfcss.github.io/InstrumentQC/"> 
+<span class="menu-text">Instrument QC Status</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -128,7 +180,7 @@ gtag('config', 'G-LZ35J3XE4D', { 'anonymize_ip': true});
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">How-to-use the Cytek Aurora</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Instrument Tutorial: Cytek Aurora</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -146,7 +198,7 @@ gtag('config', 'G-LZ35J3XE4D', { 'anonymize_ip': true});
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
- <span class="menu-text">Tutorial</span></a>
+ <span class="menu-text">Flow Cytometry</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -154,8 +206,142 @@ gtag('config', 'G-LZ35J3XE4D', { 'anonymize_ip': true});
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../course/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Getting Started</span></a>
+  <a href="https://umgcccfcsr.github.io/Theory/" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Theory</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://umgcccfcsr.github.io/PanelDesign/" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Panel Design</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">Experiments</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://umgcccfcsr.github.io/CellProcessing/" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cell Processing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://umgcccfcsr.github.io/Staining/" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Antibody Staining</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">Instrument Tutorials</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://umgcccfcsr.github.io/Aurora/" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cytek Aurora</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://umgcccfcsr.github.io/CantoII/" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">BD FACSCantoII</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://umgcccfcsr.github.io/LSRII/" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">BD LSRII</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://umgcccfcsr.github.io/FlowSight/" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Amnis FlowSight</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://umgcccfcsr.github.io/MACSQuant10/" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Miltenyi MACSQuant10</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://umgcccfcsr.github.io/AriaII/" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">BD FACSAriaII</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://umgcccfcsr.github.io/AuroraCS/" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cytek Aurora CS</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+ <span class="menu-text">Data Analysis</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://umgcccfcsr.github.io/FCSExpress/" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">FCSExpress</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://umgcccfcsr.github.io/FlowJo/" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">FlowJo v11</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://umgcccfcsr.github.io/CytometryInR/course/" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
+ <span class="menu-text">UMGCCC Flow Core Shared Resource</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://umgcccfcsr.github.io/CoreTasks/" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Core Tasks</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://umgcccfcsr.github.io/LabNotebook/" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Keeping a GitHub/Quarto LabNotebook</span></a>
   </div>
 </li>
       </ul>
@@ -165,20 +351,51 @@ gtag('config', 'G-LZ35J3XE4D', { 'anonymize_ip': true});
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a></li>
+  <li><a href="#start-up" id="toc-start-up" class="nav-link" data-scroll-target="#start-up">Start Up</a>
+  <ul>
+  <li><a href="#changing-sheathe" id="toc-changing-sheathe" class="nav-link" data-scroll-target="#changing-sheathe">Changing Sheathe</a></li>
+  <li><a href="#changing-waste" id="toc-changing-waste" class="nav-link" data-scroll-target="#changing-waste">Changing Waste</a></li>
+  <li><a href="#powering-on" id="toc-powering-on" class="nav-link" data-scroll-target="#powering-on">Powering On</a></li>
+  <li><a href="#instrument-start-up" id="toc-instrument-start-up" class="nav-link" data-scroll-target="#instrument-start-up">Instrument Start Up</a></li>
+  <li><a href="#daily-qc" id="toc-daily-qc" class="nav-link" data-scroll-target="#daily-qc">Daily QC</a></li>
+  <li><a href="#interpreting-qc" id="toc-interpreting-qc" class="nav-link" data-scroll-target="#interpreting-qc">Interpreting QC</a></li>
+  </ul></li>
+  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started">Getting Started</a></li>
+  <li><a href="#shut-down" id="toc-shut-down" class="nav-link" data-scroll-target="#shut-down">Shut Down</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">How-to-use the Cytek Aurora</h1>
+<h1 class="title">Instrument Tutorial: Cytek Aurora</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>David Rach </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 18, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -188,6 +405,73 @@ gtag('config', 'G-LZ35J3XE4D', { 'anonymize_ip': true});
 </header>
 
 
+<p><img src="../../../images/ISAC SRL Full text Large.png" class="img-fluid"></p>
+<div style="text-align: right;">
+<p><a href="https://www.gnu.org/licenses/agpl-3.0.en.html"><img src="https://img.shields.io/badge/license-AGPLv3-blue.png" class="img-fluid" alt="AGPL-3.0"></a> <a href="http://creativecommons.org/licenses/by-sa/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg" class="img-fluid" alt="CC BY-SA 4.0"></a></p>
+</div>
+<p>For the YouTube livestream recording, see <a href="">here</a></p>
+<p>For screen-shot slides, click <a href="">here</a></p>
+<p><br></p>
+<section id="background" class="level1">
+<h1>Background</h1>
+<p>This instrument tutorial contains a walk-through of how to use the <a href="">UMGCCC FCSR</a>’s [Cytek Aurora] spectral flow cytometers. It is meant to complement the in-person trainings and serve as a quick reference for those just learning how to use the instruments.</p>
+</section>
+<section id="start-up" class="level1">
+<h1>Start Up</h1>
+<p>At the <a href="">UMGCCC Flow Core Shared Resources</a> during business days, our Cytek Aurora’s are typically started by staff and have passed through the quality control steps by 10 AM. If however, you have the misfortune of being here after hours our on the weekends, if you want good quality data, you are responsible for startup and running QC.</p>
+<p>First off, locate the cell sorter room key in the drawer under our <a href="">Flow Cytometry Shrine</a>. Proceed to open the door, prop with the door-stop, and return the key to its drawer.</p>
+<section id="changing-sheathe" class="level2">
+<h2 class="anchored" data-anchor-id="changing-sheathe">Changing Sheathe</h2>
+<p>Before starting, check the sheathe fluid container on the left side of the instrument. If it is running low, press the connector to dettach the fluidic line. Carefully carry the sheathe container to the sort room.</p>
+<p>Touch the MilliQ station screen to waken the system (and if applicable close any pop-ups). On the outside of the sheathe container, each sharpie line denotes 1 liter. Designate the amount of liquid to dispense on the MilliQ screen.</p>
+<p>Unscrew the lid, and leave it propped on the side. Proceed to start the MilliQ station and fill. Keep an eye on it just to ensure no issues are encountered. Once full, stop the MilliQ, tighten the lid, and then carry the bottle back to the Aurora. Proceed to reconnect the fluidic line.</p>
+</section>
+<section id="changing-waste" class="level2">
+<h2 class="anchored" data-anchor-id="changing-waste">Changing Waste</h2>
+<p>Due to our Enviromental Health and Safety (EHS) agreement, all waste needs to be resuspended in 10% bleach to ensure it is disinfected before it is flushed down the drain. Check to see the current level to determine whether you need to discard the waste before getting started. Generally, if there is more than 2 liters on the bottle (as designated by the sharpie marks), we recommend going ahead and emptying it.</p>
+<p>Tap the lid twice to ensure any droplets in the cap drop down into the waste container. The waste container has a sensor line that is connected to the Cytek Aurora. It is important not to twist it (avoiding supercoils). Therefore, unscrew the lid by twisting the waste container to the left while holding the lid steady.</p>
+<p>Once this is done, with both hands, carefully walk the waste tank to the sink. If you need assistance, grab the cart from the cell sorter room entryway and roll it to the sink.</p>
+<p>Carefully, pour the waste down the sink, avoiding back-splashes to your arms, eyes or mouth. Once drained, turn on the faucet, and flush the sink with tap water for at least 30 seconds to avoid having bleach smell fill the entire hallway.</p>
+<p>Carry the now empty waste container back to the bleach station under the LSR-II, placing it in the red secondary spill container to avoid bleach damaging the floors wax surface. Unscrew the household bleach cap, and pour up to the first red line on the outside of the waste container (roughly 3 glug sounds). Recap the bleach bottle.</p>
+<p>Carefully return the waste with bleach to the Aurora, and screw back into place by twisting the container to the right while holding on to the cap.</p>
+</section>
+<section id="powering-on" class="level2">
+<h2 class="anchored" data-anchor-id="powering-on">Powering On</h2>
+<p>With the sheathe filled, and waste emptied, go ahead and power on the Cytek Aurora. This can be done by firmly pressing the power button that can be found on the upper left side of the instrument for a few seconds. You should hear the instrument power on and fans/cooling start up and remain on.</p>
+<p>Proceed to waken the computer from sleep by clicking on the mouse or keyboard. In event it is off, press the computers power button and wait for the computer to boot and go through start-up.</p>
+<p>All Cytek Auroras share the same password (see monitor screens white sticky note) for the computer login. After entering it, wait for Windows to complete logging in to avoid any computer stalls.</p>
+<p>Double click on the SpectroFlo software icon, and wait for it to open. Proceed to login using your user account.</p>
+</section>
+<section id="instrument-start-up" class="level2">
+<h2 class="anchored" data-anchor-id="instrument-start-up">Instrument Start Up</h2>
+<p>Once the instrument is on, and software opened, the Cytek Aurora will undergo instrument startup. If no water 5 ml tube is placed on the sip, you will get a pop-up asking that you place one on the SIP. Once placed, you will see the SIP line drop down to the bottom of the tube a couple times, water will be uptaken, and internal resevoir flushed to waste tank. Once this process is complete, you will see the cytometer icon go from red, to yellow, to green.</p>
+<p>At this point, the lasers are now on. However, we recommend waiting at least 15 minutes before running QC to allow them time to warm up and stabilize. This will ensure that when QC is run, it will be for the same conditions as when you are running samples, avoiding QC drifting mid-acquisition once the lasers have warmed up. Additionally, running QC too early can result in QC fail with innapropiate settings.</p>
+<p>Since we are a shared resource facility, you are at the mercy of the last user. We consequently recommend running a Clean Flow Cell at startup to flush out the fluidic lines of any debris, remaining cells, etc. that the last user may have left. This can be done by opening the QC tab, and accessing the cytometer gear icon on the left-side of the screen. You can then select the Clean Flow Cell icon.</p>
+<p>The pop-up will request a bleach and a water tube. Due to issues with bleach damaging the QC beads, we do not use bleach, but flush with contrad (a detergent) instead. Discard any old contrad, water, sample tubes on the rack, and prepare fresh contrad and water tube from the yellow and blue squeeze bottles next to the instrument. If these are low, borrow from the next instrument over. Fill only to half-the capacity of the 5 ml tubes (roughly the white holders on the rack) to avoid overflow when placed on the SIP.</p>
+<p>Once the contrad and water tubes are prepared, place the contrad tube on the sip (pressing until you hear the click), and only then select Start on the pop-up. The instrument will start as soon as the button is clicked, regardless of the presence of a tube. It will proceed to rapidly flush the flow cell and fluidic lines with most of the contents of the tube. Once done, the sip line will withdraw from the tube and you will get a note asking you to switch in the water tube. Proceed to do so, and select start. It will then flush away any residual contrad from the lines.</p>
+<p>At this point, generally still have 12 minutes for the instrument lasers to warm up. We will typically refill and then run the Contrad tube on High for 6 minutes, as it takes about that long to see events drop.</p>
+<p>At this point, we will refill and run the Water tube for another 6 minutes, flushing the remaining contrad and cellular gunk that may have built up from the previous day.</p>
+</section>
+<section id="daily-qc" class="level2">
+<h2 class="anchored" data-anchor-id="daily-qc">Daily QC</h2>
+<p>The Cytek Auroras are able to adjust detector gains to account for instrumental changes, allowing the analyzers to perform consistently over long periods of time despite changes that occur as the lasers approach end-of-life, and detector arrays experience wear and tear. To do this, the instruments are calibrated using SpectroFlo QC Beads, which have a standardized brightness for each detector. During automated QC, the instrument will adjust the gains up and down to ensure the QC beads that are run match the designated target for the specific bead lots.</p>
+<p>Our SpectroFlo QC beads are stored in the fridge of the Cell Sorter room. To access the room, grab the key from the desk drawer under our <a href="">Flow Cytometry Altar</a>. Once the door has been opened, prop it with the door stop, and return the key to the desk drawer.</p>
+<p>The keys can be found in the large fridge next to the MilliQ station. They are located in the small Cytek box in the door. Please make sure you grab the SpectroFloQC bead vial with the check mark on it located on the left side of the box, and not the Cell Sorter Beads that are on the right side of the box (which will not work for QC setting).</p>
+<p>Grab a clean 5 ml polystyrene tube from the clean tubes container on the table. Dispense roughly 300 ul of MilliQ water (1 cm) to the botton of the tube.</p>
+<p>Vortex the SpectroFloQC beads vigorously for 30 seconds. Carefully dispense 1 drop into the tube (avoid coming in contact with the tube surface to avoid contamination). Cap the SpectroFloQC beads and return them to their box in the fridge, making sure the door is also closed properly. Unprop and lose the door to the cell sort room on your way out.</p>
+<p>With a permanent marker, label your tube “SPFL” and the corresponding date. Vortex vigorously for 20 seconds. Open the QC tab in SpectroFlo, place the QC bead tube on the sip, and press start QC.</p>
+<p>The instrument will then go through the automated QC process, you will see individual detectors appear and dissaper as different gains are attempted to get them to reach their respective targets. Once stability is reached, bead acquisition will start and you will see beads be acquired. At this point, the sip needle will withdraw from the tube, and you will be notified whether instrument has passed or failed QC.</p>
+</section>
+<section id="interpreting-qc" class="level2">
+<h2 class="anchored" data-anchor-id="interpreting-qc">Interpreting QC</h2>
+<p>If the instrument has passed QC, congratulations, you are now all set, and can proceed with your experiment setup and acquisition. if the QC has failed, you will need to decipher what is going on.</p>
+<p>On Cytek Aurora instruments, a QC fail can be trigerred in two manners. Either the gain for a particular detector is double the original value compared to the installation value (typical of end-of-life lasers) or the % rCV value for FSC, SSC or the 3rd detector of each laser has exceeded 6 or 8 % (meaning increased spread). We track our instruments QC status on our website, where you can view the same data as shown on the instrument.</p>
+<p>What to do in the event of a QC fail? First, note if it has also occured at another point this week. If it has, we are likely aware and are working to get a Cytek field-service-engineer out to make the repairs. If there has been no other fail, there are a couple possibilities. If the failure is because the instrument has not properly warmed up yet, running water for another 10 minutes will likely be sufficient. Alternatively, if the fail is due to debris build up on the flow cell, running contrad and water for another 10 minutes can be enough. Occasionally, if someone ran bleach despite warning, the QC beads can end up damaged, which in turn can affect the automated QC.</p>
+<p>Scan the report and see if the result is due to gain changes or RCV (shown by red highlighting). If RCV, scan the column and see if multiple detectors are involved and are greater than 6%. If it is only one, or it is barely above the cutoff, you should be okay. If multiple, or values substantially greater, your data is likely to be affected. Reach out to staff if you have additional questions, or looking for advice.</p>
+</section>
+</section>
+<section id="getting-started" class="level1">
+<h1>Getting Started</h1>
 <p>Upon opening the software, you will reach the login screen</p>
 <p><img src="../../../images/00_LogIn.png" class="img-fluid"></p>
 <p>From the drop-down, you can select between using Spectral or Conventional Mode</p>
@@ -274,8 +558,18 @@ gtag('config', 'G-LZ35J3XE4D', { 'anonymize_ip': true});
 <p><img src="../../../images/42_SitFlush.png" class="img-fluid"></p>
 <p>To manually trigger an additional sit flush, you would press the sit flush button</p>
 <p><img src="../../../images/43_SitFlushManualTrigger.png" class="img-fluid"></p>
+</section>
+<section id="shut-down" class="level1">
+<h1>Shut Down</h1>
+<p>If you are the last user of the day (check the scheduling monitor or iLab) and it is after 4 pm, you are also responsible for shutting down the instrument. This is to avoid having the instruments left on overnight, since as long as the software is open and the instrument is on, the laser will continue to be on. This can accelerate wear and tear on the laser, and in the past resulted in scorch marks on the detector array.</p>
+<p>To shut down the instrument, first run a <a href="">Clean Flow Cell</a> with one tube of contrad, followed up by one tube of water. You can leave the water tube on the instrument, closing the black light covers.</p>
+<p>At this point, log out of SpectroFlo and close the software. Please leave the computer on however to allow for updates to occur.</p>
+<p>Discard any leftover contrad, water or sample tubes into biohazard.</p>
+<p>On the left side of the Cytek Aurora, you will find a power button. Press firmly for a few seconds and then let go. The instrument should shut off.</p>
+<p>If you want to earn bonus points from staff, please refill the sheathe tank with MilliQ water from the cell sorter room (Bressler 7-022A), empty the waste container down the sink drain (flushing with tap water for a minute), and add bleach to the lower red line from the bleach bottle located under the LSR-II. We greatly appreciate your help.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -329,13 +623,14 @@ gtag('config', 'G-LZ35J3XE4D', { 'anonymize_ip': true});
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
