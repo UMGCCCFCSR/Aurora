@@ -23,15 +23,21 @@ For screen-shot slides, click [here]()
 
 # Background
 
-This instrument tutorial contains a walk-through of how to use the [UMGCCC FCSR]()'s [Cytek Aurora] spectral flow cytometers. It is meant to complement the in-person trainings and serve as a quick reference for those just learning how to use the instruments.  
- 
-# Start Up
+This instrument tutorial details how to use one of the [UMGCCC Flow Core Shared Resources]()'s [Cytek Aurora]() spectral flow cytometers. This walk-through is meant to complement the in-person trainings, and additionally serve as quick reference for those in the process of learning how to use these cytometers. 
 
-At the [UMGCCC Flow Core Shared Resources]() during business days, our Cytek Aurora's are typically started by staff and have passed through the quality control steps by 10 AM. If however, you have the misfortune of being here after hours our on the weekends, if you want good quality data, you are responsible for startup and running QC. 
+# Getting Started
+
+## Background
+
+## Start Up
+
+At the [UMGCCC Flow Core Shared Resources]() during business days, our Cytek Aurora's are typically started up by staff and have passed through the quality control steps by 10 AM. If however, you have the misfortune of being here after hours our on the weekends, if you want good quality data, you are responsible for startup and running QC.
+
+### Unlocking Sort Room
 
 First off, locate the cell sorter room key in the drawer under our [Flow Cytometry Shrine](). Proceed to open the door, prop with the door-stop, and return the key to its drawer. 
 
-## Changing Sheathe
+### Changing Sheathe
 
 Before starting, check the sheathe fluid container on the left side of the instrument. If it is running low, press the connector to dettach the fluidic line. Carefully carry the sheathe container to the sort room. 
 
@@ -39,7 +45,7 @@ Touch the MilliQ station screen to waken the system (and if applicable close any
 
 Unscrew the lid, and leave it propped on the side. Proceed to start the MilliQ station and fill. Keep an eye on it just to ensure no issues are encountered. Once full, stop the MilliQ, tighten the lid, and then carry the bottle back to the Aurora. Proceed to reconnect the fluidic line. 
 
-## Changing Waste
+### Changing Waste
 
 Due to our Enviromental Health and Safety (EHS) agreement, all waste needs to be resuspended in 10% bleach to ensure it is disinfected before it is flushed down the drain. Check to see the current level to determine whether you need to discard the waste before getting started. Generally, if there is more than 2 liters on the bottle (as designated by the sharpie marks), we recommend going ahead and emptying it. 
 
@@ -53,7 +59,7 @@ Carry the now empty waste container back to the bleach station under the LSR-II,
 
 Carefully return the waste with bleach to the Aurora, and screw back into place by twisting the container to the right while holding on to the cap. 
 
-## Powering On
+### Power On
 
 With the sheathe filled, and waste emptied, go ahead and power on the Cytek Aurora. This can be done by firmly pressing the power button that can be found on the upper left side of the instrument for a few seconds. You should hear the instrument power on and fans/cooling start up and remain on. 
 
@@ -63,7 +69,7 @@ All Cytek Auroras share the same password (see monitor screens white sticky note
 
 Double click on the SpectroFlo software icon, and wait for it to open. Proceed to login using your user account. 
 
-## Instrument Start Up
+### Instrument Start Up
 
 Once the instrument is on, and software opened, the Cytek Aurora will undergo instrument startup. If no water 5 ml tube is placed on the sip, you will get a pop-up asking that you place one on the SIP. Once placed, you will see the SIP line drop down to the bottom of the tube a couple times, water will be uptaken, and internal resevoir flushed to waste tank. Once this process is complete, you will see the cytometer icon go from red, to yellow, to green. 
 
@@ -79,7 +85,7 @@ At this point, generally still have 12 minutes for the instrument lasers to warm
 
 At this point, we will refill and run the Water tube for another 6 minutes, flushing the remaining contrad and cellular gunk that may have built up from the previous day. 
 
-## Daily QC
+### Running Daily QC
 
 The Cytek Auroras are able to adjust detector gains to account for instrumental changes, allowing the analyzers to perform consistently over long periods of time despite changes that occur as the lasers approach end-of-life, and detector arrays experience wear and tear. To do this, the instruments are calibrated using SpectroFlo QC Beads, which have a standardized brightness for each detector. During automated QC, the instrument will adjust the gains up and down to ensure the QC beads that are run match the designated target for the specific bead lots. 
 
@@ -95,7 +101,7 @@ With a permanent marker, label your tube "SPFL " and the corresponding date. Vor
 
 The instrument will then go through the automated QC process, you will see individual detectors appear and dissaper as different gains are attempted to get them to reach their respective targets. Once stability is reached, bead acquisition will start and you will see beads be acquired. At this point, the sip needle will withdraw from the tube, and you will be notified whether instrument has passed or failed QC. 
 
-## Interpreting QC
+### Interpreting QC
 
 If the instrument has passed QC, congratulations, you are now all set, and can proceed with your experiment setup and acquisition. if the QC has failed, you will need to decipher what is going on. 
 
@@ -105,11 +111,13 @@ What to do in the event of a QC fail? First, note if it has also occured at anot
 
 Scan the report and see if the result is due to gain changes or RCV (shown by red highlighting). If RCV, scan the column and see if multiple detectors are involved and are greater than 6%. If it is only one, or it is barely above the cutoff, you should be okay. If multiple, or values substantially greater, your data is likely to be affected. Reach out to staff if you have additional questions, or looking for advice. 
 
-# Getting Started
+## Set Up
 
 Upon opening the software, you will reach the login screen
 
 ![](/images/00_LogIn.png)
+
+### Switching Modes
 
 From the drop-down, you can select between using Spectral or Conventional Mode
 
