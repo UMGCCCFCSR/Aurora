@@ -3,7 +3,7 @@ title: "Instrument Tutorial: Cytek Aurora"
 author:
   - name: David Rach
     orcid: 
-date: 07-18-2026
+date: 11-06-2026
 format: html
 toc: true
 toc-depth: 5
@@ -288,9 +288,13 @@ To manually trigger an additional sit flush, you would press the sit flush butto
 ![](/images/43_SitFlushManualTrigger.png)
 
 
-# Shut Down
+## Shut Down
 
-If you are the last user of the day (check the scheduling monitor or iLab) and it is after 4 pm, you are also responsible for shutting down the instrument. This is to avoid having the instruments left on overnight, since as long as the software is open and the instrument is on, the laser will continue to be on. This can accelerate wear and tear on the laser, and in the past resulted in scorch marks on the detector array. 
+If it is after 4 pm, and you are the last user of the day, **it is your responsibility to shut down the instrument**. Verify whether this is the case by checking the scheduling monitor, or logging into iLab. 
+
+This is to avoid having the instruments left on overnight, since as long as the software is open and the instrument is on, the laser will continue to be on. This can accelerate wear and tear on the laser, and in the past resulted in scorch marks on the detector array. 
+
+### Shut Down Procedure
 
 To shut down the instrument, first run a [Clean Flow Cell]() with one tube of contrad, followed up by one tube of water. You can leave the water tube on the instrument, closing the black light covers.
 
